@@ -141,7 +141,7 @@ export default {
         for (let i = 0, l = items.length; i < l; i++) {
           current = items[i][field] || minItemSize
           accumulator += current
-          sizes[i] = { accumulator, size: current }
+          sizes[items[i].id] = { accumulator, size: current }
         }
         return sizes
       }

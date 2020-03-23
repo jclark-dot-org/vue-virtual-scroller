@@ -866,7 +866,7 @@ var RecycleScroller = { render: function render() {
         for (var i = 0, l = items.length; i < l; i++) {
           current = items[i][field] || minItemSize;
           accumulator += current;
-          sizes[i] = { accumulator: accumulator, size: current };
+          sizes[items[i].id] = { accumulator: accumulator, size: current };
         }
         return sizes;
       }
